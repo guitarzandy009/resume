@@ -1,10 +1,21 @@
+:root {
+    --primary: #112a46;
+    --plum: #f7aef8;
+    --lavender: #b388eb;
+    --a11y_prple_blu: #e0cff7;
+    --vista_blu: #8093f1;
+    --a11y_blu: #d1d8fa;
+    --sky_blu: #72ddf7;
+    --baby_powder: #f4f4ed;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     max-width: 960px;
     margin: auto; 
-    background-color: #112A46;
-    color: #f4f4ed;
+    background-color: var(--primary);
+    color: var(--baby_powder);
 }
 h1 {
     font-size: 3em;
@@ -51,4 +62,17 @@ h1, h2 {
 }
 #mainLeft {
     border-right: 1px solid lightgray;
+}
+
+a {
+    border: 1px solid var(--a11y_blu);
+    background-color: var(--primary);
+    color: var(--plum);
+    border-radius: 3.5px;
+    /* Need Hover State and proper github link  plus margin between*/
+
+}
+
+h4 {
+    color: var(--sky_blu);
 }
